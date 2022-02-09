@@ -9,7 +9,7 @@ html {
   	background-size: 32px;
 }
 body {
-  	width: 60%;
+  	width: 70%;
   	margin: auto;
 }
 
@@ -101,4 +101,18 @@ input, select, span, textarea, label, .error, .submit_form {
 	color: #ffffff;
 	margin: auto;
 	text-decoration: none;
+}
+.footbar {
+	display: flex;
+	font-size: large;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.footbar a {
+	color: #ffffff;
+	margin: auto;
+	text-decoration: none;
+}
+.footbar a:hover {
+	color: #616161;
 }
