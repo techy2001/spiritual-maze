@@ -62,6 +62,11 @@ input, select, span, textarea, label, .error, .submit_form {
   	color: #ffffff;
   	padding: 20px;
 }
+@media screen and (max-width: 700px) {
+  .main {   
+    flex: 100%;
+  }
+}
 .image-thumbnail {
 	background-color: #000000;
 	width: 40%;
