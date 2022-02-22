@@ -127,8 +127,7 @@ input, select, span, textarea, label, .error, .submit_form {
 .footbar {
 	display: flex;
 	font-size: large;
-	margin-left: 30%;
-	margin-right: 30%;
+	flex: 1;
 }
 .footbar a {
 	color: #ffffff;
