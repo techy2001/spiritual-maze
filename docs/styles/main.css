@@ -19,6 +19,22 @@ body {
   }
 }
 
+.tableform {
+	width: 370px;
+}
+
+@media screen and (max-width: 550px) {
+	.tableform {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.tableform {
+		width: 200px;
+	}
+}
+
 /* Forms */
 li {
 	list-style: none;
