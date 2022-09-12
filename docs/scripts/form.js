@@ -10,15 +10,15 @@ function getTimetable(form, object) {
 	var idtype = "id";
 	var style = form.elements["style"].options[form.elements["style"].selectedIndex].value;
 	var objectstr = "";
-	if (object == 'modulecode') {
+	if (object === 'modulecode') {
 		object = 'module';
 	}
-	if (object == 'stafftext') {
+	if (object === 'stafftext') {
 		object = 'staff';
 	}
 	var template = object + "+" + style;
 	var inputelement = form.elements["identifier"];
-	if (inputelement.type == "text" ) {
+	if (inputelement.type === "text" ) {
 		objectstr = inputelement.value;
 	} else {
 		for (var i = 0; i < inputelement.options.length; i++) {
@@ -28,7 +28,7 @@ function getTimetable(form, object) {
 		}
 	}
 	objectstr = fixspace(objectstr);
-	if (objectstr == "") {
+	if (objectstr === "") {
 		alert ("Error - no object requested");
 		return;
     }
@@ -47,7 +47,7 @@ function fixspace(str) {
   newstr="";
 
   for(var i=0; i<str.length; i++) {
-    if (str.charAt(i)==" ") {
+    if (str.charAt(i)===" ") {
       newstr+=str.substr(start,(i-start))+"+";
       start=i+1;
     }
@@ -97,7 +97,7 @@ function AddGenWeeks(dy,mo,yr,stwk,enwk,cbxWeeks) {
 	    var strDat = strPad + intDat.toString();
 	    var strYr = monday.getFullYear().toString();
 	    mondaystr = "w/c " + strDay + " " + strDat + " " + strMon + " " + strYr + " (Wk " + i + ")";
-        if (j == 0) {
+        if (j === 0) {
 		    cbxWeeks.options[j] = new Option("This Week", "");
 		    monday.setDate(monday.getDate() - 7);
 		    j++;
